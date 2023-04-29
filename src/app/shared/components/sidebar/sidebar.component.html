@@ -1,0 +1,13 @@
+<div class="bg-slate-800 p-3 h-full w-72" id="sidebar">
+  <h3 class="text-white mb-3">GifsApp</h3>
+  <hr>
+  <div class="flex flex-col space-y-1 mt-3">
+    <button
+      *ngFor="let item of tags"
+      class="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
+      (click)="searchTag(item)"
+    >
+      {{ item | titlecase }}
+    </button>
+  </div>
+</div>
